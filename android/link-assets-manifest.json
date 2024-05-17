@@ -1,0 +1,53 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/Fonts/HvDTrial_Brandon_Grotesque_black-BF64a625c944b08.otf",
+      "sha1": "3a0be46c3a5c2ac3b033430929b8216c64ece093"
+    },
+    {
+      "path": "assets/Fonts/HvDTrial_Brandon_Grotesque_black_italic-BF64a625c93406c.otf",
+      "sha1": "eff8ece3f4024f22b7f7d5c45454996a8ecf9577"
+    },
+    {
+      "path": "assets/Fonts/HvDTrial_Brandon_Grotesque_bold-BF64a625c9151d5.otf",
+      "sha1": "156d2e2c8f440ffb63dc69e8b4699b7894e41557"
+    },
+    {
+      "path": "assets/Fonts/HvDTrial_Brandon_Grotesque_bold_italic-BF64a625c93b0ce.otf",
+      "sha1": "ae5727e723146f01f154db9d5c8469998981f18e"
+    },
+    {
+      "path": "assets/Fonts/HvDTrial_Brandon_Grotesque_light-BF64a625c93e709.otf",
+      "sha1": "2e90c892d70765e939d1332c8a78809ee9af8a5d"
+    },
+    {
+      "path": "assets/Fonts/HvDTrial_Brandon_Grotesque_light_italic-BF64a625c93ac64.otf",
+      "sha1": "a483b12ea6eb7984eeb6fb5f690994d7526ef42b"
+    },
+    {
+      "path": "assets/Fonts/HvDTrial_Brandon_Grotesque_medium-BF64a625c84a521.otf",
+      "sha1": "8b72ad8a930313d41cbb764a2f9b008bdb965dcf"
+    },
+    {
+      "path": "assets/Fonts/HvDTrial_Brandon_Grotesque_medium_italic-BF64a625c928c55.otf",
+      "sha1": "bd3d97d2985cdeab993ea69af8b790c8c15a845a"
+    },
+    {
+      "path": "assets/Fonts/HvDTrial_Brandon_Grotesque_regular-BF64a625c9311e1.otf",
+      "sha1": "7ece8db1ee9c62e13eb73a76487e769e9ba1c0e1"
+    },
+    {
+      "path": "assets/Fonts/HvDTrial_Brandon_Grotesque_regular_italic-BF64a625c94445e.otf",
+      "sha1": "52b57b7795c8bf3d031888b4c3bab1603f7244f1"
+    },
+    {
+      "path": "assets/Fonts/HvDTrial_Brandon_Grotesque_thin-BF64a625c9034b9.otf",
+      "sha1": "96fd71d3a00e74ee873d05b0f48939f695336979"
+    },
+    {
+      "path": "assets/Fonts/HvDTrial_Brandon_Grotesque_thin_italic-BF64a625c918a96.otf",
+      "sha1": "4ed73e0fcc7febbbe2c72cc0d0bb60e895a12c5f"
+    }
+  ]
+}

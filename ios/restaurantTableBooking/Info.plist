@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>restaurantTableBooking</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<false/>
+		<key>NSAllowsLocalNetworking</key>
+		<true/>
+	</dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string/>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>HvDTrial_Brandon_Grotesque_black-BF64a625c944b08.otf</string>
+		<string>HvDTrial_Brandon_Grotesque_black_italic-BF64a625c93406c.otf</string>
+		<string>HvDTrial_Brandon_Grotesque_bold-BF64a625c9151d5.otf</string>
+		<string>HvDTrial_Brandon_Grotesque_bold_italic-BF64a625c93b0ce.otf</string>
+		<string>HvDTrial_Brandon_Grotesque_light-BF64a625c93e709.otf</string>
+		<string>HvDTrial_Brandon_Grotesque_light_italic-BF64a625c93ac64.otf</string>
+		<string>HvDTrial_Brandon_Grotesque_medium-BF64a625c84a521.otf</string>
+		<string>HvDTrial_Brandon_Grotesque_medium_italic-BF64a625c928c55.otf</string>
+		<string>HvDTrial_Brandon_Grotesque_regular-BF64a625c9311e1.otf</string>
+		<string>HvDTrial_Brandon_Grotesque_regular_italic-BF64a625c94445e.otf</string>
+		<string>HvDTrial_Brandon_Grotesque_thin-BF64a625c9034b9.otf</string>
+		<string>HvDTrial_Brandon_Grotesque_thin_italic-BF64a625c918a96.otf</string>
+	</array>
+</dict>
+</plist>
