@@ -1,11 +1,16 @@
 import {StyleSheet} from 'react-native';
 import {RFPercentage, RFValue} from 'react-native-responsive-fontsize';
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from 'react-native-responsive-screen';
 
 const RestaurantStyle = StyleSheet.create({
   Image: {
     width: '100%',
-    height: RFValue(200),
+    height: hp('30%'),
     resizeMode: 'cover',
+    objectFit: 'cover',
     borderTopLeftRadius: RFValue(15),
     borderTopRightRadius: RFValue(15),
   },

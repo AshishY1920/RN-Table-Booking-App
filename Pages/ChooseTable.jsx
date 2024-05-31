@@ -1,4 +1,11 @@
-import {View, Text, Image, FlatList, ActivityIndicator} from 'react-native';
+import {
+  View,
+  Text,
+  Image,
+  FlatList,
+  ActivityIndicator,
+  ScrollView,
+} from 'react-native';
 import React, {useCallback, useEffect, useState} from 'react';
 import HeaderStyle from '../Components/Header/HeaderStyle/HeaderStyle';
 import Table from '../Components/Table/Table';
@@ -165,83 +172,87 @@ const ChooseTable = () => {
   };
 
   return (
-    <View
-      style={[
-        HeaderStyle.Container,
-        {
-          flex: 1,
-          backgroundColor: 'white',
-          alignItems: 'center',
-        },
-      ]}>
-      {/* Date Picker component starts here */}
-      <DatePicker
-        selected={formatDate(currentDate)}
-        mode="calendar"
-        minimumDate={formatDate(currentDate)}
-        options={{
-          defaultFont: 'HvDTrial_Brandon_Grotesque_medium-BF64a625c84a521',
-          headerFont: 'HvDTrial_Brandon_Grotesque_medium-BF64a625c84a521',
-          textHeaderColor: '#FFA25B',
-          textDefaultColor: '#1c1c1c',
-          selectedTextColor: '#fff',
-          mainColor: '#1c1c1c',
-          textSecondaryColor: '#D6C7A1',
-          borderColor: 'rgba(122, 146, 165, 0.1)',
-        }}
-        onDateChange={date => handleDate(date)}
-        onSelectedChange={date => setCurrentDate(date)}
-      />
-      {/* Date Picker component ends here */}
-      {isLoading ? (
-        <View style={{paddingBottom: RFValue(40)}}>
-          <ActivityIndicator size="large" color="#86469C" />
-        </View>
-      ) : (
-        <FlatList
-          numColumns={3}
-          columnWrapperStyle={TableStyle.TableGap}
-          data={tableArr}
-          renderItem={({item}) => (
-            <Table
-              image={item.seats}
-              tableNo={item.tableNo}
-              CurrentDate={CurrentDate}
-              restaurantImage={image}
-              id={id}
-              BookedSeats={seats}
-            />
-          )}
-          showsVerticalScrollIndicator={false}
-          keyExtractor={item => item.id.toString()}
-          initialNumToRender={2}
-          windowSize={2}
+    <ScrollView
+      showsVerticalScrollIndicator={false}
+      style={{backgroundColor: 'white', flex: 1}}>
+      <View
+        style={[
+          HeaderStyle.Container,
+          {
+            alignItems: 'center',
+          },
+        ]}>
+        {/* Date Picker component starts here */}
+        <DatePicker
+          selected={formatDate(currentDate)}
+          mode="calendar"
+          minimumDate={formatDate(currentDate)}
+          options={{
+            defaultFont: 'HvDTrial_Brandon_Grotesque_medium-BF64a625c84a521',
+            headerFont: 'HvDTrial_Brandon_Grotesque_medium-BF64a625c84a521',
+            textHeaderColor: '#FFA25B',
+            textDefaultColor: '#1c1c1c',
+            selectedTextColor: '#fff',
+            mainColor: '#1c1c1c',
+            textSecondaryColor: '#D6C7A1',
+            borderColor: 'rgba(122, 146, 165, 0.1)',
+          }}
+          onDateChange={date => handleDate(date)}
+          onSelectedChange={date => setCurrentDate(date)}
         />
-      )}
+        {/* Date Picker component ends here */}
+        {isLoading ? (
+          <View style={{paddingBottom: RFValue(40)}}>
+            <ActivityIndicator size="large" color="#86469C" />
+          </View>
+        ) : (
+          <FlatList
+            numColumns={3}
+            columnWrapperStyle={TableStyle.TableGap}
+            data={tableArr}
+            scrollEnabled={false}
+            nestedScrollEnabled={false}
+            renderItem={({item}) => (
+              <Table
+                image={item.seats}
+                tableNo={item.tableNo}
+                CurrentDate={CurrentDate}
+                restaurantImage={image}
+                id={id}
+                BookedSeats={seats}
+              />
+            )}
+            showsVerticalScrollIndicator={false}
+            keyExtractor={item => item.id.toString()}
+            initialNumToRender={2}
+            windowSize={2}
+          />
+        )}
 
-      <View style={TableStyle.ReservedContainer}>
-        <View style={TableStyle.ReserverRow}>
-          <View
-            style={[
-              TableStyle.ContainerReserved,
-              {backgroundColor: '#B4B4B8'},
-            ]}></View>
-          <Text style={[TableStyle.reservedText, {color: '#B4B4B8'}]}>
-            Available
-          </Text>
-        </View>
-        <View style={TableStyle.ReserverRow}>
-          <View
-            style={[
-              TableStyle.ContainerReserved,
-              {backgroundColor: '#86469C'},
-            ]}></View>
-          <Text style={[TableStyle.reservedText, {color: '#86469C'}]}>
-            Reserved
-          </Text>
+        <View style={TableStyle.ReservedContainer}>
+          <View style={TableStyle.ReserverRow}>
+            <View
+              style={[
+                TableStyle.ContainerReserved,
+                {backgroundColor: '#B4B4B8'},
+              ]}></View>
+            <Text style={[TableStyle.reservedText, {color: '#B4B4B8'}]}>
+              Available
+            </Text>
+          </View>
+          <View style={TableStyle.ReserverRow}>
+            <View
+              style={[
+                TableStyle.ContainerReserved,
+                {backgroundColor: '#86469C'},
+              ]}></View>
+            <Text style={[TableStyle.reservedText, {color: '#86469C'}]}>
+              Reserved
+            </Text>
+          </View>
         </View>
       </View>
-    </View>
+    </ScrollView>
   );
 };
 
